@@ -1,0 +1,23 @@
+//Decodes an uppercase string according to the ROT13 cipher
+//Does not decode non-alphabetic characters
+
+function rot13(str) {
+  var decode = []
+  str = str.split("");
+  for (let i = 0; i < str.length; i++){
+    var char = str[i].charCodeAt();
+    if (char < 65 || char > 90){
+      decode[i] = String.fromCharCode(char);
+    }
+    else if (char < 78) {
+      decode[i] = String.fromCharCode(char+13);
+    }
+    else {
+      decode[i] = String.fromCharCode(char-13);
+    }
+  }
+  //console.log(decode.join(""))
+  return decode.join("");
+}
+
+rot13("SERR PBQR PNZC");
