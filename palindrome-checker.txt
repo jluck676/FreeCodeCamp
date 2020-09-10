@@ -11,5 +11,7 @@ function palindrome(str) {
 }
 
 
+//Will check if a string is a palindrome
+//Ignores capitalization and symbols
 
 palindrome("eye");
