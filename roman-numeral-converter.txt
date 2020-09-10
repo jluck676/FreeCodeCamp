@@ -1,3 +1,6 @@
+//Takes a decimal number and converts into the Roman Numeral equilvalent
+
+
 function convertToRoman(num) {
   var roman = ["I", "V", "X", "L", "C", "D", "M"],
   ints = [],
